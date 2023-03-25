@@ -43,16 +43,7 @@ public class Login extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String emailStr = username.getText().toString();
-                String passwordStr = password.getText().toString();
 
-                if( emailStr.length() ==0 || passwordStr.length() ==0){
-                    Toast.makeText(Login.this, "Fill All Field's", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                //check user  exist or not authentication
-                progressBar.setVisibility(View.VISIBLE);
 
             }
         });

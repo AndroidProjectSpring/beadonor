@@ -51,25 +51,6 @@ public class SignUp extends AppCompatActivity {
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String nameStr=name.getText().toString().trim();
-                String ageStr=age.getText().toString();
-                String mobileStr=mobile.getText().toString();
-                String genderStr=gender.getText().toString().trim();
-                String emailStr=email.getText().toString().trim();
-                String passwordStr=password.getText().toString().trim();
-                String conformPasswordStr=confirmPassword.getText().toString().trim();
-
-                if(nameStr.length() ==0 || ageStr.length() ==0 || mobileStr.length() ==0 || genderStr.length() ==0 || emailStr.length() ==0 || passwordStr.length() ==0 || conformPasswordStr.length() ==0){
-                    Toast.makeText(SignUp.this, "Fill All Field's", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                if(!(passwordStr.equals(conformPasswordStr))){
-                    Toast.makeText(SignUp.this, "Password and Confirm password Should Be Same", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                //create user in firebase
 
             }
         });

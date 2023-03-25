@@ -33,11 +33,8 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        username=findViewById(R.id.username_edit_text);
-        password=findViewById(R.id.password_edit_text);
         login=findViewById(R.id.login_btn);
         signUp=findViewById(R.id.signupText);
-        progressBar=findViewById(R.id.progress_bar);
 
 
         login.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +54,5 @@ public class Login extends AppCompatActivity {
         });
     }
 
-    public void goToHomePage(){
 
-    }
 }

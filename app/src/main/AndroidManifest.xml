@@ -10,13 +10,24 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BeADonar"
         tools:targetApi="31">
-<!--        <activity-->
-<!--            android:name=".MainActivity"-->
-<!--            android:exported="true">-->
+        <activity
+            android:name=".FirstAidDetails"
+            android:exported="false" />
+        <activity
+            android:name=".DonorDeatails"
+            android:exported="false" />
+        <activity
+            android:name=".Doonors"
+            android:exported="false" />
+        <activity
+            android:name=".BloodGroup"
+            android:exported="false" />
+        <activity
+            android:name=".GridLayout"
+            android:exported="false" />
         <activity
             android:name=".SignUp"
             android:exported="false" />
@@ -28,10 +39,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
         </activity>
     </application>
 
